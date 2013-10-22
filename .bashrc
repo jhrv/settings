@@ -9,6 +9,9 @@ alias create-gitrepo='create_gitrepo' # creates git both a local and remote (git
 alias pbrc='push_bash_rc'
 alias sbrc='source ~/.bashrc'
 alias ebrc='sub ~/.bashrc'
+alias pvrc='push_vim_rc'
+alias evrc='vim ~/.vimrc'
+
 
 create_gitrepo() {
 	#TODO: should check if in a repo folder and if it already exists remotely?
@@ -26,3 +29,10 @@ push_bash_rc(){
 	cd -
 }
 
+push_vim_rc(){
+	cd $WORKSPACE/settings
+	git add .vimrc
+	git commit .vimrc -m "chchchaaangeees"
+	git push origin master
+	cd -
+}
