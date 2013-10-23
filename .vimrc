@@ -1,6 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -11,11 +13,18 @@ filetype indent on
 " Set to auto read when a file is changed from the outside
 set autoread
 
+" </3 vi
+set nocompatible
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
+
+" Airline stuff
+set laststatus=2
+set ttimeoutlen=50
 
 " Turn on the WiLd menu
 set wildmenu
