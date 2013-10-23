@@ -16,6 +16,9 @@ set autoread
 " </3 vi
 set nocompatible
 
+" show linenumbers
+set number
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
