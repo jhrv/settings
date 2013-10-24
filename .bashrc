@@ -18,7 +18,7 @@ create_gitrepo() {
 	git init
 	repo_name=`basename $PWD`
 	curl -u $GITHUB_USERNAME https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
-	git remote add origin http://github.com/$GITHUB_USERNAME/$repo_name.git
+	git remote add origin git@github.com:$GITHUB_USERNAME/$repo_name.git
 }
 
 push_bash_rc(){
