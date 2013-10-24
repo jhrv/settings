@@ -29,6 +29,17 @@ set so=7
 set laststatus=2
 set ttimeoutlen=50
 
+let g:airline_theme             = 'powerlineish'
+let g:airline_enable_branch     = 1
+let g:airline_enable_syntastic  = 1
+let g:airline_left_sep          = ''
+let g:airline_left_alt_sep      = ''
+let g:airline_right_sep         = ''
+let g:airline_right_alt_sep     = ''
+let g:airline_branch_prefix     = ''
+let g:airline_readonly_symbol   = ''
+let g:airline_linecolumn_prefix = ''
+
 " Turn on the WiLd menu
 set wildmenu
 
@@ -61,7 +72,7 @@ set hlsearch
 set incsearch
 
 " Don't redraw while executing macros (good performance config)
-set lazyredraw
+"set lazyredraw
 
 " For regular expressions turn magic on
 set magic
