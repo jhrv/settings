@@ -141,5 +141,5 @@ set viminfo^=%
 
 
 " XML formatting
-set autoindent on
+filetype indent on
 map ,x gg=G
