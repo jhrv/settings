@@ -139,3 +139,9 @@ autocmd BufReadPost *
 " Remember info about open buffers on close
 set viminfo^=%
 
+
+" XML formatting
+function! XML() 
+  silent %!xmllint --format %
+endfunction
+command! XML call XML()
