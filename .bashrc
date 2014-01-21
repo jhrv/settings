@@ -4,6 +4,7 @@ WORKSPACE=/Users/hrv/Documents/workspace
 alias ll='ls -latrhG'
 alias macmini='ssh hrv@192.168.1.116'
 alias pi='ssh pi@192.168.1.67'
+alias amazon='ssh johnny@54.194.9.221'
 alias ws='cd $WORKSPACE'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
 alias pbrc='push_bash_rc'
