@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-execute pathogen#infect()
+"execute pathogen#infect()
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -140,6 +140,22 @@ autocmd BufReadPost *
 set viminfo^=%
 
 
+:set guifont=Menlo\ Regular:h14
+
 " XML formatting
 filetype indent on
 map ,x gg=G
+ 
+" Remove toolbar
+set guioptions-=T
+ 
+colorscheme desert
+ 
+" hard-mode
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+ 
+" set initial windows size
+set lines=71 columns=130
