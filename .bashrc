@@ -1,15 +1,15 @@
 GITHUB_USERNAME=jhrv
-WORKSPACE=/Users/hrv/Documents/workspace
+WORKSPACE=/Users/hrv/ws
 
 alias ll='ls -latrhG'
 alias macmini='ssh hrv@192.168.1.116'
 alias pi='ssh pi@192.168.1.67'
-alias amazon='ssh johnny@54.194.9.221'
 alias ws='cd $WORKSPACE'
+alias vim='mvim'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
 alias pbrc='push_bash_rc'
 alias sbrc='source ~/.bashrc'
-alias ebrc='sub ~/.bashrc'
+alias ebrc='vim ~/.bashrc'
 alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
 
@@ -37,3 +37,6 @@ push_vim_rc(){
 	git push origin master
 	cd -
 }
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
