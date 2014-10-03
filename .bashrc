@@ -13,6 +13,10 @@ alias ebrc='vim ~/.bashrc'
 alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
 
+init() {
+    export PS1="\u@\h:\W $ "
+    osascript -e 'tell app "Finder" to quit'
+}
 
 create_gitrepo() {
 	#TODO: should check if in a repo folder and if it already exists remotely?
@@ -37,6 +41,8 @@ push_vim_rc(){
 	git push origin master
 	cd -
 }
+
+init
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
