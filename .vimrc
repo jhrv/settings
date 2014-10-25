@@ -163,7 +163,15 @@ set lines=71 columns=130
 " show buffers
 let g:airline#extensions#tabline#enabled = 1
 
+" navigate buffers
 nnoremap <C-h> :bprevious<CR>
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-d> :bdelete<CR>
 
+" fuzzy finder bindings
+nmap ,f :FufFileWithCurrentBufferDir<CR>
+nmap ,b :FufBuffer<CR>
+nmap ,t :FufTaggedFile<CR>
+
+" fix colors for fuzzy finder
+highlight Pmenu guifg=#000000 guibg=#BBFD9A gui=bold ctermfg=black ctermbg=blue cterm=bold
