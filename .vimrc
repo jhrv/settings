@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"execute pathogen#infect()
+execute pathogen#infect()
 
 " Sets how many lines of history VIM has to remember
 set history=700
@@ -159,3 +159,11 @@ noremap <Right> <NOP>
  
 " set initial windows size
 set lines=71 columns=130
+
+" show buffers
+let g:airline#extensions#tabline#enabled = 1
+
+nnoremap <C-h> :bprevious<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-d> :bdelete<CR>
+
