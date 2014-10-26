@@ -12,6 +12,7 @@ alias sbrc='source ~/.bashrc'
 alias ebrc='vim ~/.bashrc'
 alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
+alias nav-wifi='/Users/hrv/sync/utils/wifi/wifi.sh'
 
 init() {
     export PS1="\u@\h:\W $ "
