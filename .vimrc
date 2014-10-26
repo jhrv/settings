@@ -3,9 +3,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
 
-" Sets how many lines of history VIM has to remember
-set history=700
-
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
@@ -131,6 +128,11 @@ set nobackup
 set nowb
 set noswapfile
 
+set history=1000         " remember more commands and search history
+set undolevels=1000      " use many muchos levels of undo
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set title                " change the terminal's title
+
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
             \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -175,3 +177,7 @@ nmap ,t :FufTaggedFile<CR>
 
 " fix colors for fuzzy finder
 highlight Pmenu guifg=#000000 guibg=#BBFD9A gui=bold ctermfg=black ctermbg=blue cterm=bold
+
+" :w!!!!!
+cmap w!! w !sudo tee % >/dev/null
+
