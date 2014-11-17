@@ -17,11 +17,12 @@ alias ws='cd $WORKSPACE'
 alias vim='mvim'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
 alias pzrc='push_zsh_rc'
-alias sbrc='source ~/.bashrc'
-alias ebrc='vim ~/.bashrc'
+alias szrc='source ~/.zshrc'
+alias ezrc='vim ~/.zshrc'
+alias eprezto='vim ~/.zpreztorc'
 alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
-alias nav-wifi='/Users/hrv/sync/utils/wifi/wifi.sh'
+alias wifi-nav='/Users/hrv/sync/utils/wifi/wifi.sh'
 
 init() {
     #export PS1="\u@\h:\W $ "
