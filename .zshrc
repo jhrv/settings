@@ -12,7 +12,7 @@ WORKSPACE=/Users/hrv/ws
 
 alias ll='ls -latrhG'
 alias macmini='ssh hrv@192.168.1.116'
-alias pi='ssh pi@192.168.1.67'
+alias pi='ssh pi@horvi.asuscomm.com'
 alias ws='cd $WORKSPACE'
 alias vim='mvim'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
@@ -28,6 +28,13 @@ init() {
     #export PS1="\u@\h:\W $ "
     osascript -e 'tell app "Finder" to quit'
     ZSH_THEME='clean'
+    init_docker
+}
+
+init_docker(){
+    if [ $(boot2docker status) = "running" ]; then
+        $(boot2docker shellinit)
+    fi
 }
 
 create_gitrepo() {
