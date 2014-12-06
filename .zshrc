@@ -14,6 +14,7 @@ alias ll='ls -latrhG'
 alias macmini='ssh hrv@192.168.1.116'
 alias pi='ssh pi@horvi.asuscomm.com'
 alias pi_local='ssh pi@192.168.1.67'
+alias pippi='ssh pi@192.168.1.174'
 alias ws='cd $WORKSPACE'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
 alias pzrc='push_zsh_rc'
