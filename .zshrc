@@ -24,12 +24,17 @@ alias eprezto='vim ~/.zpreztorc'
 alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
 alias wifi-nav='/Users/hrv/sync/utils/wifi/wifi.sh'
+alias chrome='launch_in_chrome'
 
 init() {
     #export PS1="\u@\h:\W $ "
     osascript -e 'tell app "Finder" to quit'
     ZSH_THEME='clean'
     init_docker
+}
+
+launch_in_chrome(){
+    /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk $1
 }
 
 init_docker(){
