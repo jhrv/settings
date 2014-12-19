@@ -151,7 +151,7 @@ map ,x gg=G
 " Remove toolbar
 set guioptions-=T
  
-colorscheme desert
+colorscheme atom-dark
  
 " hard-mode
 noremap <Up> <NOP>
