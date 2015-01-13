@@ -61,6 +61,12 @@ set title                " change the terminal's title
 
 set autochdir   " Change working directory to open buffer
  
+" navigate buffers
+nnoremap <C-h> :tabprevious<CR>
+nnoremap <C-l> :tabnext<CR>
+nnoremap <C-t> :tabnew<CR>
+nnoremap <C-d> :tabclose<CR>
+
 "colorscheme atom-dark
 let g:solarized_termcolors=256
 set background=dark
