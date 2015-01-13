@@ -41,6 +41,10 @@ set hlsearch " Highlight search results
 set incsearch " Makes search act like search in modern browsers
 set magic " For regular expressions turn magic on
 set showmatch " Show matching brackets when text indicator is over them
+set tabstop=4 " tab = <space>x4
+set shiftwidth=4 " shifting/indenting = <space>x4
+set expandtab " tab -> space
+set smartindent
 
 " No annoying sound on errors
 set noerrorbells
@@ -67,7 +71,12 @@ nnoremap <C-l> :tabnext<CR>
 nnoremap <C-t> :tabnew<CR>
 nnoremap <C-d> :tabclose<CR>
 
-"colorscheme atom-dark
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+if has("gui_macvim")
+    colorscheme atom-dark
+else
+    let g:solarized_termcolors=256
+    set background=dark
+    colorscheme solarized
+endif
+
+set guifont=Inconsolata:h20
