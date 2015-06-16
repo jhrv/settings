@@ -25,6 +25,8 @@ alias pvrc='push_vim_rc'
 alias evrc='vim ~/.vimrc'
 alias wifi-nav='/Users/hrv/sync/utils/wifi/wifi.sh'
 alias chrome='launch_in_chrome'
+alias emacs='open -a /Applications/Emacs.app --args' 
+alias emacs-debug='open -a /Applications/Emacs.app --args --debug-init'
 
 init() {
     #export PS1="\u@\h:\W $ "
