@@ -40,8 +40,22 @@ launch_in_chrome(){
 }
 
 init_docker(){
-    if [ $(boot2docker status) = "running" ]; then
-        $(boot2docker shellinit)
+    if [ $(docker-machine status default) = "Running" ]; then
+        eval $(docker-machine env default --shell=zsh)
+cat << EOF
+
+
+                        ##         .
+                  ## ## ##        ==
+               ## ## ## ## ##    ===
+           /"""""""""""""""""\___/ ===
+      ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+           \______ o           __/
+             \    \         __/
+              \____\_______/
+
+
+EOF
     fi
 }
 
