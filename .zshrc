@@ -16,6 +16,7 @@ alias pi='ssh pi@horvi.asuscomm.com'
 alias pi_local='ssh pi@192.168.1.67'
 alias pippi='ssh pi@192.168.1.174'
 alias ws='cd $WORKSPACE'
+alias gdrive='cd ~/gdrive'
 alias create-gitrepo='create_gitrepo' # creates git both a local and remote (github) repository
 alias pzrc='push_zsh_rc'
 alias szrc='source ~/.zshrc'
@@ -67,6 +68,10 @@ create_gitrepo() {
     git remote add origin git@github.com:$GITHUB_USERNAME/$repo_name.git
 }
 
+stopfinder() {
+    osascript -e 'tell app "Finder" to quit'
+}
+
 push_zsh_rc(){
     cd $WORKSPACE/settings
     cp -f ~/.zshrc .
@@ -86,3 +91,9 @@ push_vim_rc(){
 }
 
 init
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/hrv/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/hrv/google-cloud-sdk/completion.zsh.inc'
