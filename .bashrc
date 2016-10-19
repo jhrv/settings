@@ -7,6 +7,7 @@ alias sbrc='source ~/.bashrc'
 alias ebrc='vim ~/.bashrc'
 alias emacs='edit_with_emacs'
 alias e='edit_with_emacs'
+alias tcplisten='lsof -iTCP -sTCP:LISTEN -P'
 
 init() {
     export PS1="\W $ "
