@@ -9,6 +9,7 @@ alias emacs='edit_with_emacs'
 alias e='edit_with_emacs'
 alias tcplisten='lsof -iTCP -sTCP:LISTEN -P'
 alias k='kubectl'
+alias gaustadveien23='ssh gaustadveien23.no@ssh.gaustadveien23.no'
 
 init() {
     export PS1="\W $ "
