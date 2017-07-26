@@ -38,3 +38,6 @@ push_bash_rc(){
 }
 
 init
+
+# added by travis gem
+[ -f /Users/hrv/.travis/travis.sh ] && source /Users/hrv/.travis/travis.sh
